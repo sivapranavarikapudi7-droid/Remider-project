@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+}
+
+/* Main application */
+.app {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Header */
+.header {
+  text-align: center;
+  color: white;
+  padding: 40px 20px;
+}
+
+.header h1 {
+  margin: 0 0 10px;
+  font-size: 36px;
+}
+
+.header p {
+  font-size: 18px;
+}
+
+.clock {
+  margin-top: 15px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Main container */
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Cards */
+.card {
+  background: white;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+  color: #333;
+  margin-top: 0;
+}
+
+/* Form */
+form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+input {
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+input[type="text"] {
+  flex: 1;
+  min-width: 200px;
+}
+
+button {
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form button {
+  background: #667eea;
+}
+
+/* Task */
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 18px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  gap: 15px;
+}
+
+.taskInfo h3 {
+  margin: 0 0 8px;
+  color: #333;
+}
+
+.taskInfo p {
+  margin: 0;
+  color: #666;
+}
+
+/* Completed task */
+.completed {
+  opacity: 0.6;
+  text-decoration: line-through;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.complete {
+  background: #28a745;
+}
+
+.snooze {
+  background: #ff9800;
+}
+
+.delete {
+  background: #dc3545;
+}
+
+/* Empty message */
+.empty {
+  text-align: center;
+  color: #777;
+  padding: 20px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  color: white;
+  padding: 25px;
+  margin-top: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+
+  .header h1 {
+    font-size: 28px;
+  }
+
+  .task {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  input,
+  form button {
+    width: 100%;
+  }
+}
